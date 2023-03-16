@@ -1,7 +1,7 @@
 
 # "assert" verifica se uma condicao esta sendo satisfeita pra continuacao do codigo
 
-def sum(x, y) -> float:
+def calc(x, y) -> float:
     assert isinstance(x, (int, float)), 'x should be int or float'
     assert isinstance(y, (int, float)), 'y should be int or float'
     # assert x < y, 'x must be less than y'

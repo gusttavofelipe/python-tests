@@ -1,11 +1,11 @@
-from calculator import sum
+from calculator import calc
 
 
-print(sum(1, 3))
+print(calc(1, 3))
 
 try:
-    print(sum('8', 7))
+    print(calc('8', 7))
 except AssertionError as e:
     print(f'Invalid operation: {e}')
 
-print('conta:', sum(1, 4))
+print('conta:', calc(1, 4))
