@@ -1,20 +1,20 @@
 # doctest - testa funcoes com os testes escritos na docstring
 
-def calc(x, y) -> float:
-    """ calc x and y
+def calc_sum(x, y) -> float:
+    """ calc_sum x and y
     
-    >>> calc(-5, 20)
+    >>> calc_sum(-5, 20)
     15.0
 
-    >>> calc(0, -1)
+    >>> calc_sum(0, -1)
     -1.0
 
-    >>> calc('1', 1)
+    >>> calc_sum('1', 1)
     Traceback (most recent call last):
     ...
     AssertionError: x should be int or float
 
-    >>> calc(1, '1')
+    >>> calc_sum(1, '1')
     Traceback (most recent call last):
     ...
     AssertionError: y should be int or float
