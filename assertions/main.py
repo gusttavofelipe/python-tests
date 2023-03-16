@@ -1,11 +1,11 @@
-from calculadora import soma
+from calculator import sum
 
 
-print(soma(1, 3))
+print(sum(1, 3))
 
 try:
-    print(soma('8', 7))
+    print(sum('8', 7))
 except AssertionError as e:
     print(f'Invalid operation: {e}')
 
-print('conta:', soma(1, 4))
+print('conta:', sum(1, 4))
