@@ -1,5 +1,20 @@
+try:
+    import sys
+    import os
+    sys.path.append(
+        os.path.abspath(
+            os.path.join(
+                os.path.dirname(__file__),
+                '../src'
+            )
+        )
+    )
+except:
+    raise
+
+
 import unittest
-from doctests.assertions.calculator import calc_sum
+from calculator import calc_sum
 
 
 # a classe deve conter a palavra "Test;"
@@ -43,5 +58,5 @@ class TestCalculator(unittest.TestCase):
     # testa se uma exceção é gerada quando callable é chamado
     
 
-
-unittest.main(verbosity=2)
+if __name__ == '__main__':
+    unittest.main(verbosity=2)
